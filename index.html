@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>快乐购Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div id="header" class="clearfix">
+    <div class="header_top" id="no1">
+        <div class="w1200">
+            <div class="header_top_l">
+                <span>欢迎来到快乐购!</span>
+                <a href="login.html">[登录]</a>
+                <span class="line">|</span>
+                <a href="register.html">[注册]</a>
+            </div>
+            <div class="header_top_r">
+                <ul>
+                    <li><img src="images/shop_enter_icon.gif" /><b class="b_down"></b></li>
+                    <li><span class="line">|</span><a href="#">订单查询</a><span class="line">|</span></li>
+                    <li><a href="#">我的快乐购</a><span class="line">|</span></li>
+                    <li><b class="icon-photo"></b><a href="#">233-233-233</a><span class="line">|</span></li>
+                    <li><a href="#">下载快乐购app</a><span class="line">|</span></li>
+                    <li><a href="#">客服中心</a><b class="b_down"></b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="h_c w1200">
+        <div class="h_c_logo">
+            <a href="#"><img src="images/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="h_c_bz">
+            <img src="images/top_center1.jpg" />
+        </div>
+        <div class="h_c_s">
+            <div class="search_input">
+                <input type="text" class="search_txt">
+                <input type="button" class="search_btn" value="搜索">
+            </div>
+            <div class="search_key">
+                <ul>
+                    <li><a href="#">补水</a></li>
+                    <li><a href="#">能率</a></li>
+                    <li><a href="#">YSL</a></li>
+                    <li><a href="#">蜂蜜</a></li>
+                    <li><a href="#">京城之风</a></li>
+                    <li><a href="#">风扇</a></li>
+                    <li><a href="#">方太</a></li>
+                    <li><a href="#">果汁机</a></li>
+                    <li><a href="#">韩束</a></li>
+                    <li><a href="#">面膜</a></li>
+                    <li><a href="#">牛奶</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_c_c">
+            <div class="shop_car">
+                <b class="car_1"></b>
+                <span>我的购物车</span>
+                <b class="car_2"></b>
+                <span class="car_mun">0</span>
+            </div>
+            <div class="shop_mask"></div>
+            <div class="shop_box">
+
+            </div>
+        </div>
+    </div>
+    <div class="full_nav">
+        <div class="nav w1200">
+            <ul>
+                <a href="#"><li class="li_all_type">全部分类<b class="bb_down"></b></li></a>
+                <li class="home"><a href="#"><b>首页</b></a></li>
+                <li><a href="#">TV直播</a><img src="images/img_hot.png"></li>
+                <li><a href="#">网易严选</a></li>
+                <li><a href="#">一县一品</a></li>
+                <li><a href="#">旗舰店</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="content" calss="clearfix">
+    <div class="full_big_eye" style="margin-top: -11px;">
+        <div class="index_type">
+            <ul class="index_type_ul">
+                <li>个人美妆
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">面部护理</a><i>></i></li>
+                            <li><a href="#">身体护理</a><i>></i></li>
+                            <li><a href="#">美发护理</a><i>></i></li>
+                            <li><a href="#">口腔护理</a><i>></i></li>
+                            <li><a href="#">香水彩妆</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>餐厨日用
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">厨房电器</a><i>></i></li>
+                            <li><a href="#">餐饮用具</a><i>></i></li>
+                            <li><a href="#">厨房用具</a><i>></i></li>
+                            <li><a href="#">烹饪锅具</a><i>></i></li>
+                            <li><a href="#">厨房配件</a><i>></i></li>
+                            <li><a href="#">生活用品</a><i>></i></li>
+                            <li><a href="#">家居家饰</a><i>></i></li>
+                            <li><a href="#">清洁收纳</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>食品健康
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">休闲食品</a><i>></i></li>
+                            <li><a href="#">生鲜食品</a><i>></i></li>
+                            <li><a href="#">粮油调味</a><i>></i></li>
+                            <li><a href="#">饮料冲调</a><i>></i></li>
+                            <li><a href="#">营养保健</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>服装搭配
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">女士服装</a><i>></i></li>
+                            <li><a href="#">男士服装</a><i>></i></li>
+                            <li><a href="#">内衣</a><i>></i></li>
+                            <li><a href="#">箱包</a><i>></i></li>
+                            <li><a href="#">箱包</a><i>></i></li>
+                            <li><a href="#">运动/户外</a><i>></i></li>
+                            <li><a href="#">珠宝藏品</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>布艺家纺
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">床品套件</a><i>></i></li>
+                            <li><a href="#">布艺软饰</a><i>></i></li>
+                            <li><a href="#">抱枕靠垫</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>家电数码
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">生活家电</a><i>></i></li>
+                            <li><a href="#">大家电</a><i>></i></li>
+                            <li><a href="#">手机通讯</a><i>></i></li>
+                            <li><a href="#">电脑影音</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>母婴呵护
+                    <div class="nav_type_list">
+                        <ul>
+                            <li><a href="#">婴幼护理</a><i>></i></li>
+                            <li><a href="#">婴幼食品</a><i>></i></li>
+                            <li><a href="#">孕童服饰</a><i>></i></li>
+                            <li><a href="#">早教玩具</a><i>></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="full_eye">
+            <div id="indexBanner">
+                <ul class="big_eye_pic">
+                    <li><a href="#"><img src="images/carousel-1.jpg"></a></li>
+                    <li><a href="#"><img src="images/carousel-2.jpg"></a></li>
+                    <li><a href="#"><img src="images/carousel-3.jpg"></a></li>
+                    <li><a href="#"><img src="images/carousel-4.jpg"></a></li>
+                </ul>
+                <ul class="big_eye_nav">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pro_hot w1200" id="no2">
+        <div class="pro_hot_title">
+            <ul class="pro_menu">
+                <li class="pro_menu_txt on">今日直播</li>
+                <li class="pro_menu_line">|</li>
+                <li class="pro_menu_txt">昨日疯抢</li>
+                <li class="pro_menu_line">|</li>
+                <li class="pro_menu_btn"><button><b class="icon_tv"></b>节目表></button></li>
+                <li class="pro_menu_img"><img src="images/pro_menu.jpg"></li>
+            </ul>
+        </div>
+        <div class="pro_con">
+            <div class="pro_con_in">
+                <ul class="pro_con_in_ul">
+                    <!-- 数据加载 -->
+                </ul>
+                <ul class="pro_con_in_ul" style="display: none;">
+                    <!-- 数据加载 -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- pro_hot  END -->
+<div class="xsqg_box w1200" id="no3">
+    <div class="floor_title">
+        <h2 class="floor_h2_top">限时抢购</h2>
+        <ul class="floor_type">
+            <!-- <li>9点专场</li>
+            <li>15点专场</li>
+            <li>20点专场</li> -->
+        </ul>
+    </div>
+    <div class="xsqg_list w1200">
+        <ul>
+            <li>
+                <a href="#"><img src="images/1_05435146498876204_240.jpg" alt=""></a>
+                <div class="xsqg_djs">
+                    <i class="i_xsqg_timer"></i>
+                    <span>距结束:</span>
+                    <span class="xsqg_djs">00:00:00</span>
+                </div>
+                <div class="xsqg_title">
+                    <a href="#">
+                        <p style="color:#333">天然种植蟹田生态米</p>
+                        <p>wng万年贡蟹田丝苗米5kg南方长粒大米香软晚籼米黏米10斤 新米</p>
+                    </a>
+                </div>
+                <div class="xsqg_btn">
+                    <div class="xsqg_1">
+                        <span class="xsqg_btn_q1">
+                            ￥
+                            <strong>56</strong>
+                        </span>
+                        <span class="xsqg_btn_q2"><del>￥79</del></span>
+                    </div>
+                    <a href="#" class="xsqg_buy">立即抢购</a>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/1_05435146498876204_240.jpg" alt=""></a>
+                <div class="xsqg_djs">
+                    <i class="i_xsqg_timer"></i>
+                    <span>距结束:</span>
+                    <span class="xsqg_djs">00:00:00</span>
+                </div>
+                <div class="xsqg_title">
+                    <a href="#">
+                        <p style="color:#333">天然种植蟹田生态米</p>
+                        <p>wng万年贡蟹田丝苗米5kg南方长粒大米香软晚籼米黏米10斤 新米</p>
+                    </a>
+                </div>
+                <div class="xsqg_btn">
+                    <div class="xsqg_1">
+                        <span class="xsqg_btn_q1">
+                            ￥
+                            <strong>56</strong>
+                        </span>
+                        <span class="xsqg_btn_q2"><del>￥79</del></span>
+                    </div>
+                    <a href="#" class="xsqg_buy">立即抢购</a>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/1_05435146498876204_240.jpg" alt=""></a>
+                <div class="xsqg_djs">
+                    <i class="i_xsqg_timer"></i>
+                    <span>距结束:</span>
+                    <span class="xsqg_djs">00:00:00</span>
+                </div>
+                <div class="xsqg_title">
+                    <a href="#">
+                        <p style="color:#333">天然种植蟹田生态米</p>
+                        <p>wng万年贡蟹田丝苗米5kg南方长粒大米香软晚籼米黏米10斤 新米</p>
+                    </a>
+                </div>
+                <div class="xsqg_btn">
+                    <div class="xsqg_1">
+                        <span class="xsqg_btn_q1">
+                            ￥
+                            <strong>56</strong>
+                        </span>
+                        <span class="xsqg_btn_q2"><del>￥79</del></span>
+                    </div>
+                    <a href="#" class="xsqg_buy">立即抢购</a>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/1_05435146498876204_240.jpg" alt=""></a>
+                <div class="xsqg_djs">
+                    <i class="i_xsqg_timer"></i>
+                    <span>距结束:</span>
+                    <span class="xsqg_djs">00:00:00</span>
+                </div>
+                <div class="xsqg_title">
+                    <a href="#">
+                        <p style="color:#333">天然种植蟹田生态米</p>
+                        <p>wng万年贡蟹田丝苗米5kg南方长粒大米香软晚籼米黏米10斤 新米</p>
+                    </a>
+                </div>
+                <div class="xsqg_btn">
+                    <div class="xsqg_1">
+                        <span class="xsqg_btn_q1">
+                            ￥
+                            <strong>56</strong>
+                        </span>
+                        <span class="xsqg_btn_q2"><del>￥79</del></span>
+                    </div>
+                    <a href="#" class="xsqg_buy">立即抢购</a>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/1_05435146498876204_240.jpg" alt=""></a>
+                <div class="xsqg_djs">
+                    <i class="i_xsqg_timer"></i>
+                    <span>距结束:</span>
+                    <span class="xsqg_djs">00:00:00</span>
+                </div>
+                <div class="xsqg_title">
+                    <a href="#">
+                        <p style="color:#333">天然种植蟹田生态米</p>
+                        <p>wng万年贡蟹田丝苗米5kg南方长粒大米香软晚籼米黏米10斤 新米</p>
+                    </a>
+                </div>
+                <div class="xsqg_btn">
+                    <div class="xsqg_1">
+                        <span class="xsqg_btn_q1">
+                            ￥
+                            <strong>56</strong>
+                        </span>
+                        <span class="xsqg_btn_q2"><del>￥79</del></span>
+                    </div>
+                    <a href="#" class="xsqg_buy">立即抢购</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 新品推荐end -->
+    <div class="jxhd_box w1200" id="no4">
+        <div class="jxhd_title">
+            <h2>精选活动</h2>
+        </div>
+        <ul  class="jxhd_list clearfix">
+            <!-- 数据加载 -->
+        </ul>
+    </div>
+
+<!-- 个人护肤 -->
+    <div class="grmf_box w1200" id="no5">
+        <div class="grmf_title">
+        <h2 class="grmf_h2_top">餐厨日用</h2>
+            <ul class="grmf_type">
+            <!--     <li>热销</li>
+                <li>面部护理</li>
+                <li>身体护理</li> -->
+            </ul>
+        </div>
+        <div class="grmf_con pro_con_in">
+            <ul class="grmf_con_ul">
+                <li>
+                    <a href="#"><img src="images/05495711428738782.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/pro_con_img/1.jpg" /></a>
+                    <p class="p_mun">阿根廷·比脚掌大的红虾</p>
+                    <p class="box_glay"><a href="#">阿根廷原装进口红虾美味组2KG/盒*99</a></p>
+                    <div class="now_price">
+                       <span class="bigfont">￥998</span>
+                        <del>$10</del>
+                    </div>
+                </li>
+                <li style="">
+                    <a href="#"><img src="images/pro_con_img/1.jpg" /></a>
+                    <p class="p_mun">阿根廷·比脚掌大的红虾</p>
+                    <p class="box_glay"><a href="#">阿根廷原装进口红虾美味组2KG/盒*99</a></p>
+                    <div class="now_price">
+                        <span class="bigfont">￥998</span>
+                        <del>$10</del>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="images/pro_con_img/1.jpg" /></a>
+                    <p class="p_mun">阿根廷·比脚掌大的红虾</p>
+                    <p class="box_glay"><a href="#">阿根廷原装进口红虾美味组2KG/盒*99</a></p>
+                    <div class="now_price">
+                        <span class="bigfont">￥998</span>
+                        <del>$10</del>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="images/pro_con_img/1.jpg" /></a>
+                    <p class="p_mun">阿根廷·比脚掌大的红虾</p>
+                    <p class="box_glay"><a href="#">阿根廷原装进口红虾美味组2KG/盒*99</a></p>
+                    <div class="now_price">
+                        <span class="bigfont">￥998</span>
+                        <del>$10</del>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="images/pro_con_img/1.jpg" /></a>
+                    <p class="p_mun">阿根廷·比脚掌大的红虾</p>
+                    <p class="box_glay"><a href="#">阿根廷原装进口红虾美味组2KG/盒*99</a></p>
+                    <div class="now_price">
+                        <span class="bigfont">￥998</span>
+                        <del>$10</del>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="images/pro_con_img/1.jpg" /></a>
+                    <p class="p_mun">阿根廷·比脚掌大的红虾</p>
+                    <p class="box_glay"><a href="#">阿根廷原装进口红虾美味组2KG/盒*99</a></p>
+                    <div class="now_price">
+                        <span class="bigfont">￥998</span>
+                        <del>$10</del>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer0 w1200" id="no6">
+        <img src="images/foot_img1.jpg">
+    </div>
+    <div class="footer_help w1200 ">
+    <div class="clearfix">
+        <ul>
+            <li>使用帮助</li>
+            <li><a href="#">税费收取规则</a></li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">用户协议</a></li>
+            <li><a href="#">常见问题</a></li>
+        </ul>
+        <ul>
+            <li>会员服务</li>
+            <li><a href="#">积分政策</a></li>
+            <li><a href="#">会员等级</a></li>
+            <li><a href="#">会员权益</a></li>
+        </ul>
+        <ul>
+            <li>支付方式</li>
+            <li><a href="#">积分支付</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">优惠券支付</a></li>
+        </ul>
+        <ul>
+            <li>配送方式</li>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">包邮政策</a></li>
+            <li><a href="#">费用说明</a></li>
+        </ul>
+        <ul>
+            <li>售后服务</li>
+            <li><a href="#">电子发票</a></li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">用户协议</a></li>
+            <li><a href="#">常见问题</a></li>
+        </ul>
+        <ul class="footer_qr">
+            <li>
+            <p>手机快乐购</p>
+            <img src="images/footer_QR.png" />
+            <span>下载移动客户端</span>
+            </li>
+            <li>
+            <p>快乐购微信</p>
+            <img src="images/footer_QR.png" />
+            <span>快乐购官方微信</span>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="footer_nav w1200">
+        <ul>
+            <li><a href="#">关于快乐购</a><span class="line"></span></li>
+            <li><a href="#">投资者联系</a><span class="line"></span></li>
+            <li><a href="#">平台招商</a><span class="line"></span></li>
+            <li><a href="#">自营品牌招商</a><span class="line"></span></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="footer_bottom">
+        <div class="w1200" style="margin-top: 10px;">
+            <p>Copyright© 2006-2016 happigo. All Rights Reserved 免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800 E-Mail: service@happigo.com</p>
+            <p>湘ICP备12000157号 信息网络传播视听节目许可证号：1810530</p>
+            <div class="footer_p">
+                <a><img src="images/foot_img3.png"></a>
+                <a><img src="images/foot_img4.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="search_fixed">
+    <div class="w1200">
+        <div class="search_fixed_logo clearfix"><img src="images/search_fixed_logo.png"></div>
+        <div class="search_fixed_in">
+            <form class="clearfix">
+                <input class="search_fixed_txt" type="text" />
+                <input class="search_fixed_btn" type="button" value="搜索"/>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="storey_fixed">
+    <ul>
+        <li data='no1'>返回顶部</li>
+        <li data='no2'>今日直播</li>
+        <li data='no3'>限时抢购</li>
+        <li data='no4'>精选活动</li>
+        <li data='no5'>餐厨日用</li>
+        <li data='no6'>关于我们</li>
+    </ul>
+</div>
+</body>
+</html>
